@@ -15,7 +15,7 @@ explore: location {}
 explore: actualvs_max {
   join: location {
     type: left_outer
-    sql_on: ${actualvs_max.loc_fk}=${location.loc_sk} ;;
     relationship: many_to_one
+    sql_on: ${actualvs_max.loc_fk}=${location.loc_sk} ;;
   }
 }

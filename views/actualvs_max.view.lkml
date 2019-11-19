@@ -18,6 +18,7 @@ view: actualvs_max {
 
   dimension: loc_fk {
     type: number
+    primary_key: yes
     sql: ${TABLE}.loc_fk ;;
   }
 
