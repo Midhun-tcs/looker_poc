@@ -12,9 +12,10 @@ persist_with: actual_max_default_datagroup
 
 explore: location {}
 
+
 explore: actualvs_max {
   join: location {
-    type: left_outer
+    type: inner
     relationship: many_to_one
     sql_on: ${actualvs_max.loc_fk}=${location.loc_sk} ;;
   }
