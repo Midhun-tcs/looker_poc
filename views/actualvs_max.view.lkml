@@ -79,41 +79,41 @@ view: actualvs_max {
   measure: bops_sdd_inprocess {
     type: sum
     sql: ${bops_sdd_units_inprocess} ;;
-    drill_fields: [loc_fk]
+    drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location,bops_sdd_inprocess]
   }
   measure: bops_sdd_not_ready {
     type: sum
     sql: ${bops_sdd_units_not_ready} ;;
-    drill_fields: [loc_fk]
+    drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location,bops_sdd_not_ready]
   }
   measure: bops_sdd_printed {
     type: sum
     sql: ${bops_sdd_units_printed} ;;
-    drill_fields: [loc_fk]
+    drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location,bops_sdd_printed]
   }
   measure: shippbl_in_process {
     type: sum
     sql: ${shippable_in_process} ;;
-    drill_fields: [loc_fk]
+    drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location,shippbl_in_process]
   }
   measure: shippable_printd {
     type: sum
     sql: ${shippable_printed} ;;
-    drill_fields: [loc_fk]
+    drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location,shippable_printd]
   }
   measure: shippable_unshippd {
     type: sum
     sql: ${shippable_unshipped} ;;
-    drill_fields: [loc_fk]
+    drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location,shippable_unshippd]
   }
   measure: shippabl_unshippd_dedicated_fulfillment {
     type: sum
     sql: ${shippable_unshipped_dedicated_fulfillment} ;;
-    drill_fields: [loc_fk]
+    drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location,shippabl_unshippd_dedicated_fulfillment]
   }
   measure: total_units_incomplt {
     type: sum
     sql: ${total_units_incomplete} ;;
-    drill_fields: [loc_fk]
+    drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location,total_units_incomplt]
   }
 }
