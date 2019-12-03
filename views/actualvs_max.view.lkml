@@ -118,13 +118,13 @@ view: actualvs_max {
   }
   measure: max_pick_percent {
     type: number
-    sql: 100*${shippabl_unshippd_dedicated_fulfillment}/${max_picks____shippable_} ;;
+    sql: 100*${shippable_unshipped_dedicated_fulfillment}/${max_picks____shippable_} ;;
     value_format: "0.00%"
     drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location]
   }
   measure: operational_max_pick_percent {
     type: number
-    sql: 100*${shippabl_unshippd_dedicated_fulfillment}/${operational_max_picks____shippable_} ;;
+    sql: 100*${shippable_unshipped_dedicated_fulfillment}/${operational_max_picks____shippable_} ;;
     value_format: "0.00%"
     drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location]
   }
