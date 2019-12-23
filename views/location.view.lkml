@@ -1,24 +1,24 @@
 view: location {
   sql_table_name: ActualvsMax.Location ;;
 
-  dimension: dist_desc {
+  dimension: district_description {
     type: string
-    sql: ${TABLE}.dist_desc;;
+    sql: ${TABLE}.District_Description;;
   }
 
   dimension: fulfillment_location {
     type: string
-    sql: ${TABLE}.divn_str_name ;;
+    sql: ${TABLE}.Fulfillment_Location ;;
   }
   dimension: loc_sk {
     type: number
     primary_key: yes
-    sql: ${TABLE}.loc_sk ;;
+    sql: ${TABLE}.Loc_sk ;;
   }
 
   dimension: max_picks {
     type: number
-    sql: ${TABLE}.max_picks ;;
+    sql: ${TABLE}.Max_Picks ;;
   }
   dimension: locn_nm {
     type: string
@@ -38,7 +38,7 @@ view: location {
   }
   dimension: zl_str_nbr {
     type: number
-    sql: ${TABLE}.zl_str_nbr ;;
+    sql: ${TABLE}.Store_Number ;;
   }
   dimension: locn_nbr {
     type: number
@@ -54,18 +54,16 @@ view: location {
   }
   dimension: operational_max_picks {
     type: number
-    sql: ${TABLE}.ops_max_picks ;;
+    sql: ${TABLE}.Operational_Max_Picks;;
   }
   dimension: divn_name {
     type: string
     sql: ${TABLE}.divn_name;;
   }
-
   dimension: sub_region_description {
     type: string
-    sql: ${TABLE}.sub_rgn_desc ;;
+    sql: ${TABLE}.Sub_Region_Description;;
   }
-
   measure: max_pick {
     type: sum
     sql: ${max_picks} ;;
