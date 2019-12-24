@@ -67,11 +67,11 @@ view: location {
   measure: max_pick {
     type: sum
     sql: ${max_picks} ;;
-    drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location]
+    drill_fields: [location.sub_region_description]
   }
   measure: oper_max_pick {
     type: sum
     sql: ${operational_max_picks} ;;
-    drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location]
+    drill_fields: [location.sub_region_description]
   }
 }
